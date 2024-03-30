@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded',function () {
     let userHighestScore = {}
     let highestscoreSetionScoreBtns =[...document.querySelectorAll('#highestscore .scorebtn')]
     let scoreBTN =document.querySelectorAll('.scorebtn').value 
+
     
                         
     DATA.map(gameData=>{
@@ -65,8 +66,26 @@ document.addEventListener('DOMContentLoaded',function () {
         btn .addEventListener('click',SCOREBTNhandler)
     })
 
-    function SCOREBTNhandler() {
+    function SCOREBTNhandler(event) {
+        const clickButtonValue =event.target.value
+        let filteredObject =DATA
+        if (clickButtonValue!=="") {
+             filteredObject =DATA.filter(o =>{
+                return o.gameMode==clickButtonValue
+    
+            }).slice(0,5)
+        }
+        highestScoreTable.querySelector('tbody').innerHTML=""
         
+        filteredObject.map(gameData=>{ 
+            const newRow = document.createElement("tr");
+            let tableColoums=`<td>${gameData.gamePlayer}</td>
+                            <td  ><span class="mode-${gameData.gameMode}">${gameData.gameMode}<span></td>
+                            <td>${gameData.gameScore}</td>
+                            <td>${gameData.date}</td>`
+            newRow.innerHTML = tableColoums
+            highestScoreTable.querySelector('tbody').appendChild(newRow)
+        })
     }
 
 })
