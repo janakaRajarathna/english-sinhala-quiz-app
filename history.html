@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English to Sinhala Quiz</title>
+    <link rel="stylesheet" href="sinhala.css">
+    <!-- <link href="bootstrap.min.css" rel="stylesheet"  > -->
+<!-- <script src="bootstrap.bundle.min.js" ></script> -->
+</head>
+<body>
+    <nav>
+        <a href="sinhla.html">home</a>
+        <a href ="history.html">history</a>
+        <a href="settings.html">settings</a>
+      </nav>
+
+      <div class="container">
+        <div id="last5games">
+          <div><h1> GAME SCORES</h1></div>
+       
+          <table  >
+            
+            <thead class="caption">
+              <tr >
+                
+                <th >GAME PLAYER</th>
+                <th >GAME MODE</th>
+                <th >SCORE</th>
+                <th >DATE</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+
+        </div>
+        <div id="highestscore" class="card">
+          
+          <div style="margin-top: 10px; background-color: yellow;">
+            <div>
+              <h1> HIGHEST SCORE</h1>
+            </div>
+            <div>
+              <button class="scorebtn" value="5">5</button>
+              <button class="scorebtn" value="10">10</button>
+              <button class="scorebtn" value="15">15</button>
+            </div>
+          </div>
+          
+          
+       
+          <table   >
+            <caption>asasa</caption>
+            <thead>
+              <tr >
+                
+                <th >GAME PLAYER</th>
+                <th >GAME MODE</th>
+                <th >HIGHEST SCORES</th>
+                <th >DATE</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+        </div>
+        <div id="userscore">
+          <div style="margin-top: 10px;"><h1> USER'S  SCORE</h1>
+            <button class="scorebtn" value="5">5</button>
+            <button class="scorebtn" value="10">10</button>
+            <button class="scorebtn" value="15">15</button>
+          </div>
+       
+          <table   >
+            <thead>
+              <tr >
+                
+                <th >GAME PLAYER</th>
+                <th >GAME MODE</th>
+                <th >HIGHEST SCORES</th>
+                <th >DATE</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <script src="history.js"></script>
+</body>
+<style>
+
+  
+
+  .mode-10{
+    background-color: #2499e7 !important;
+    padding: 5px;
+    border-radius: 1px;
+    color: white;
+    width: 10px;
+  }
+
+  .mode-5{
+    background-color: #198754 !important;
+    padding: 5px;
+    border-radius: 1px;
+    color: white;
+    width: 10px;
+  }
+
+  .mode-15{
+    background-color: #f847cc !important;
+    padding: 5px;
+    border-radius: 1px;
+    width: 10px;
+    color: white
+  }
+
+  table{
+    width: 80%;
+  }
+  table,td,th{
+    border: 2px solid rgb(22, 22, 22);
+    border-radius: 20px;
+  }
+
+ 
+
+  /* tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(10, 98, 139, 0.4);
+} */
+
+
+tbody tr:nth-child(even) {
+  background-color: #0e5252 !important;
+}
+.scorebtn{
+  background-color: rgb(170, 123, 245);
+  float: right;
+ 
+}
+
+.container > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
+</html>
