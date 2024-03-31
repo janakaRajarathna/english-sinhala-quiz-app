@@ -17,7 +17,11 @@
 
       <div class="container">
         <div id="last5games">
-          <div><h1> GAME SCORES</h1></div>
+          <div style="margin-top: 10px; background-color: yellow;">
+            <div><h1> GAME SCORES</h1></div>
+
+          </div>
+         
        
           <table  >
             
@@ -68,11 +72,16 @@
             </tbody>
           </table>
         </div>
-        <div id="userscore">
-          <div style="margin-top: 10px;"><h1> USER'S  SCORE</h1>
-            <button class="scorebtn" value="5">5</button>
-            <button class="scorebtn" value="10">10</button>
-            <button class="scorebtn" value="15">15</button>
+        <div id="userscore" >
+          <div style="margin-top: 10px; background-color: yellow; ">
+            <div>
+              <h1 > USER'S  SCORE</h1>
+            </div>
+            <div>
+              <button class="scorebtn" value="5">5</button>
+              <button class="scorebtn" value="10">10</button>
+              <button class="scorebtn" value="15">15</button>
+            </div>
           </div>
        
           <table   >
@@ -125,8 +134,8 @@
     width: 80%;
   }
   table,td,th{
-    border: 2px solid rgb(22, 22, 22);
-    border-radius: 20px;
+    border: 2px solid rgb(236, 229, 229);
+    /* border-radius: 20px; */
   }
 
  
@@ -141,7 +150,7 @@ th:nth-child(even),td:nth-child(even) {
 
 
 tbody tr:nth-child(even) {
-  background-color: #0e5252 !important;
+  background-color: #78fcfc !important;
 }
 .scorebtn{
   background-color: rgb(170, 123, 245);
@@ -153,6 +162,9 @@ tbody tr:nth-child(even) {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+h1{
+  color: rgb(27, 27, 26);
 }
 </style>
 </html>

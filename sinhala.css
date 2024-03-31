@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    background-image:url(img/quiz-single-word-set-with-vintage-letterpress-printing-blocks-on-rustic-wooden-background-surrounded-by-exclamation-and-question-marks-RY8WEG.jpg);
 }
 
 .quiz-container {
@@ -16,7 +17,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #f7eded;
 }
 
 #question-container {
@@ -71,7 +72,7 @@ h1 {
 }
 
 .other-answer{
-    color: #575555;
+    color: #857807;
    
 }
 .mode > div:nth-child(2) {
